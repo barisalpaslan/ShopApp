@@ -1,0 +1,27 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="bg-primary p-2 text-white">
+          Admin Panel
+        </div>
+   </div>
+
+   <div class="row mt-2">
+      <div class="col-3">
+
+        <button routerLink="/shop"  class="btn btn-outline-info btn-block m-3">Shop</button>
+        <br>
+        <button routerLinkActive="active" routerLink="/admin/main/products"  class="btn btn-outline-info btn-block m-3">Products</button>
+        <br>
+        <button routerLinkActive="active" routerLink="/admin/main/categories"  class="btn btn-outline-info btn-block m-3">Categories</button>
+        <br>
+        <button routerLinkActive="active" routerLink="/admin/main/orders"  class="btn btn-outline-info btn-block m-3">Orders</button>
+        <br>
+        <button (click)="logout()" class="btn btn-outline-danger btn-block m-3">Logout</button>
+
+      </div>
+      <div class="col-9">
+              <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
